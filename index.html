@@ -10,6 +10,69 @@
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
+
+
+
+
+
+#scroll-container {
+  border: 3px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#scroll-text {
+  text-align: right;
+
+  /* animation properties */
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(-100%); }
+  to { -moz-transform: translateX(100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(-100%); }
+  to { -webkit-transform: translateX(100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(-10%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(1000%);
+    transform: translateX(100%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </style>
 </head>
 <body>
@@ -83,6 +146,17 @@ body {font-family: "Lato", sans-serif}
          we welcome our all students to wisite our web and check our latest 
          updates . The company Kapil Bishnoi was built in 2023.Thankyou We Always Look Further For You.
          </p>
+
+
+         <div id="scroll-container">
+            <div id="scroll-text">KAPIL BISHNOI.<div>
+          </div>
+          </div>
+          </div>
+
+
+
+
     <div class="w3-row w3-padding-32">
       <div class="w3-third">
         <p></p>
@@ -106,7 +180,7 @@ body {font-family: "Lato", sans-serif}
   <div class="w3-black" id="tour">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center">Availability</h2>
-      <p class="w3-opacity w3-center"><i>RK METAL</i></p><br>
+      <p class="w3-opacity w3-center"><i>KAPIL BISHNOI.</i></p><br>
 
       <ul class="w3-ul w3-border w3-white w3-text-grey">
         <li class="w3-padding">october 14<span class="w3-tag w3-red w3-margin-left">      </span></li>
