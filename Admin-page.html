@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>KAPIL BISHNOI</title>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="x-icon" href="https://us.123rf.com/450wm/artbandung99/artbandung992202/artbandung99220200043/183290361-letter-v-and-k-logo-in-modern-style.jpg?ver=6">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script language="javascript">
+  
+var $tickerWrapper = $(".tickerwrapper");
+var $list = $tickerWrapper.find("ul.list");
+var $clonedList = $list.clone();
+var listWidth = 10;
+
+$list.find("li").each(function (i) {
+			listWidth += $(this, i).outerWidth(true);
+});
+
+var endPos = $tickerWrapper.width() - listWidth;
+
+$list.add($clonedList).css({
+	"width" : listWidth + "px"
+});
+
+$clonedList.addClass("cloned").appendTo($tickerWrapper);
+
+//TimelineMax
+var infinite = new TimelineMax({repeat: -1, paused: true});
+var time = 40;
+
+infinite
+  .fromTo($list, time, {rotation:0.01,x:0}, {force3D:true, x: -listWidth, ease: Linear.easeNone}, 0)
+  .fromTo($clonedList, time, {rotation:0.01, x:listWidth}, {force3D:true, x:0, ease: Linear.easeNone}, 0)
+  .set($list, {force3D:true, rotation:0.01, x: listWidth})
+  .to($clonedList, time, {force3D:true, rotation:0.01, x: -listWidth, ease: Linear.easeNone}, time)
+  .to($list, time, {force3D:true, rotation:0.01, x: 0, ease: Linear.easeNone}, time)
+  .progress(1).progress(0)
+  .play();
+
+//Pause/Play		
+$tickerWrapper.on("mouseenter", function(){
+	infinite.pause();
+}).on("mouseleave", function(){
+	infinite.play();
+});
+   </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+
+
+
+
+
+
+
+
+#scroll-container {
+  border: 3px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#scroll-text {
+  text-align: right;
+
+  /* animation properties */
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(-100%); }
+  to { -moz-transform: translateX(100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(-100%); }
+  to { -webkit-transform: translateX(100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(-10%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(1000%);
+    transform: translateX(100%);
+  }
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="file:///C:/Users/rajur/Downloads/hover-2/RK%20METAL%20FORM.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SEND REQUEST</a>
+    <a href="file:///C:/Users/rajur/Downloads/hover-2/COMING%20SOON.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CLASSES</a>
+    <a href="file:///C:/Users/rajur/Downloads/hover-2/login%202.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOGIN</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="file:///C:/Users/rajur/Downloads/hover-2/COMING%20SOON.html" class="w3-bar-item w3-button">Notes</a>
+        <a href="file:///C:/Users/rajur/Downloads/classe's.html" class="w3-bar-item w3-button">PDF Of Clases</a>
+        <a href="file:///C:/Users/rajur/Downloads/Test%20paper%201.html" class="w3-bar-item w3-button">Take a Test</a>
+        <a href="file:///C:/Users/rajur/Downloads/Goals.html" class="w3-bar-item w3-button">Set Your Goals</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="file:///C:/Users/rajur/Downloads/hover-2/RK%20METAL%20FORM.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SEND REQUEST</a>
+  <a href="file:///C:/Users/rajur/Downloads/hover-2/COMING%20SOON.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CLASSES</a>
+  <a href="file:///C:/Users/rajur/Downloads/hover-2/login%202.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LOGIN</a>
+ <a href="file:///C:/Users/rajur/Downloads/classe's.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Notes</a>
+ <a href="file:///C:/Users/rajur/Downloads/hover-2/COMING%20SOON.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PDF Of Clases</a>
+ <a href="file:///C:/Users/rajur/Downloads/Test%20paper%201.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Take a Test</a>
+ <a href="file:///C:/Users/rajur/Downloads/Goals.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Set Your Goals</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://images.pling.com/img/00/00/68/45/84/1926407/jaipur-nahargarh-rajasthan-india-2021-bing-4k-photo-wallpaper-1920x1080-10wallpaper.com.jpg" style="width:80% " >
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+     
+      <h3 style="font-size: 90px">KAPIL BISHNOI</h3>
+      
+     
+
+
+      <a href="#band" ><img src="https://d9hhrg4mnvzow.cloudfront.net/www.fitapp.app/dalton-confirmation/dd83de99-arrow-bouncing.gif" style="width:20% " ></a>
+      
+
+
+
+
+     <p><b>We Look Further For You</b></p>   
+    </div>
+  </div>
+
+
+
+  
+  
+  
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">KAPIL BISHNOI</h2>
+    <p class="w3-opacity"><i></i></p>
+    
+         
+        
+         <div id="scroll-container">
+          <div id="scroll-text">ADMIN - PAGE.<div>
+        </div>
+        </div>
+        </div>
+
+
+
+
+
+
+        
+        
+        
+          </div>
+        </div>
+  
+
+
+
+
+
+
+      
+    
+
+  <center><a href="#tour" ><img src="https://d9hhrg4mnvzow.cloudfront.net/www.fitapp.app/dalton-confirmation/dd83de99-arrow-bouncing.gif" style="width:5%" ></a></center>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Availability</h2>
+      <p class="w3-opacity w3-center"><i>KAPIL BISHNOI.</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">october 14<span class="w3-tag w3-red w3-margin-left">      </span></li>
+        <li class="w3-padding">october 15<span class="w3-tag w3-red w3-margin-left">      </span></li>
+        <li class="w3-padding">october 16<span class="w3-badge w3-right w3-margin-right">3</span></li>
+        
+    </ul>
+    
+    </div>
+    </div>
+</div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+
+       <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>KAPIL BISHNOI</h2>
+      </header>
+      <div class="w3-container">
+        
+        <p><label><i class="fa fa-user"></i> Sorry For The Inconvenience.</label></p>
+        <p><label><i class="fa fa-user"></i>We are looking forward for your course</label></p>
+       
+        
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" onclick="document.getElementById('ticketModal').style.display='none'">THANKYOU<i class="fa fa-check"></i></button>
+        
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Nee Any Help<i class=""></i></button>
+       
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  
+
+
+
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> All over india<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone:  XXXXXXXXXX <br>
+        <i class="fa fa-envelope" style="width:30px"> </i>kapilbishnoi8919@gmail.com<br>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></form>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScjTAA452hN-m2VXw9ZF_mSCIl6XRzR0uWdlDBo9cSZCK6thQ/viewform?usp=sf_link" >
+           <button  class="w3-button w3-black w3-section w3-right" name="submit" type="submit">Submit &#10132;</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <center>
+    <a href="https://www.youtube.com/channel/UCrLGE5VPeQ1OKGw2nv8n7LQ" ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/2560px-Logo_of_YouTube_%282015-2017%29.svg.png" alt="New York" style="width:10%" class="w3-hover-opacity">
+    </a><p class="" style="font-size: 10px;">Visit Our  Channel </p>
+
+
+ 
+<!-- End Page Content -->
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i  class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by Kapil Bishnoi </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<center><a href="#" ><img src="https://publications.wfp.org/2022/evaluation-capacity-report/images/Arrow-Sticker-by-NewSpring-Church-for-iOS--Android-GIPHY.gif" style="width:5% " ></a></center>
+
+</body>
+</html>
