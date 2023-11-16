@@ -24,7 +24,7 @@ function auth(){
     var password = document.getElementById("password").value;
      if(email=="kapilbishnoi@90000" && password=="kapilbishnoi@3170582")
      {  window.location.assign ("https://kapilbishnoi90000.github.io/KAPIL/Admin-page.html");
-     alert("Logged in successfully ✅.Click OK for Next);
+     alert("Logged in successfully ✅.Click ok for Next");
     }
     else{
         alert("Invalid ID or Password");
