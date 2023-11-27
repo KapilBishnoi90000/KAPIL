@@ -119,34 +119,102 @@ body {font-family: "Lato", sans-serif}
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+  --green: #1BFD9C;
+  font-size: 13px;
+  padding: 0.5em 0.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--green);
+  background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+  color: var(--green);
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+}
+
+button:hover {
+  color: #82ffc9;
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform .4s ease-in-out;
+  background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+}
+
+button:hover:before {
+  transform: translateX(15em);
+}
+
+
+
+
+
+
+
+
+
+
 </style>
 </head>
 <body>
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="https://kapilbishnoi90000.github.io/KAPIL/" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSAkjVYV2at06Sb22aGWkX3LMN0hhlj0f0I3vxIusQJqE0n59lJXJwPZVIlnilxCNx7orM8jhY7r87t/pubhtml" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Problem Page</a>
-    <a href="https://docs.google.com/forms/d/1UlAE2dFaSqc4wJyytquWfKUuyPQRwJPnq8icyH2SapY/edit#response=ACYDBNgAONte3ZI_hmF84vF8ISIUw7w6p70JnnTgSBWj9XIUXnq4MWTcohS-GTOLXOI_LTI" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Form 1 Responses</a>
-    <a href="https://docs.google.com/forms/d/1hYYL9Wzu4D7ZUEykXv7y8C23UWf3jfuJlLL2eVI8MC4/edit#response=ACYDBNhUsLFd7EEl8r48azZZPModrrI5IrjbjHCOPaTL7y5rdVVBQ3PI1O2SDG8x0ULod84" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Form 2 Responses</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="https://docs.google.com/spreadsheets/d/1E35_TOM79C8EibZs1yB3klljpux3LlfkpIlRh_z_Z30/edit#gid=0" class="w3-bar-item w3-button">Edit page 1</a>
-        <a href="https://docs.google.com/spreadsheets/d/1GBUZzE1h1nlD9ovB6Mag4OGwyehj4-DAt7iHmqUBql0/edit#gid=1078623670" class="w3-bar-item w3-button">Edit page 2 of Responses</a>
-        <a href="https://kapilbishnoi90000.github.io/KAPIL/class-10-admin.html" class="w3-bar-item w3-button">Test Responses of Class 10</a>
-        <a href="https://kapilbishnoi90000.github.io/KAPIL/class-9-admin.html" class="w3-bar-item w3-button">Test Responses of Class 9</a>
-        <a href="https://kapilbishnoi90000.github.io/KAPIL/class-8-admin.html" class="w3-bar-item w3-button">Test Responses of Class 8</a>
-        <a href="https://kapilbishnoi90000.github.io/KAPIL/class-7-admin.html" class="w3-bar-item w3-button">Test Responses of Class 7</a>
-        <a href="https://kapilbishnoi90000.github.io/KAPIL/class-6-admin.html" class="w3-bar-item w3-button">Test Responses of Class 6</a>
-        <a href="https://kapilbishnoi90000.github.io/KAPIL/class-5-admin.html" class="w3-bar-item w3-button">Test Responses of Class 5</a>
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="https://kapilbishnoi90000.github.io/KAPIL/" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSAkjVYV2at06Sb22aGWkX3LMN0hhlj0f0I3vxIusQJqE0n59lJXJwPZVIlnilxCNx7orM8jhY7r87t/pubhtml" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Problem Page</a>
+      <a href="https://docs.google.com/forms/d/1UlAE2dFaSqc4wJyytquWfKUuyPQRwJPnq8icyH2SapY/edit#response=ACYDBNgAONte3ZI_hmF84vF8ISIUw7w6p70JnnTgSBWj9XIUXnq4MWTcohS-GTOLXOI_LTI" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Form 1 Responses</a>
+      <a href="https://docs.google.com/forms/d/1hYYL9Wzu4D7ZUEykXv7y8C23UWf3jfuJlLL2eVI8MC4/edit#response=ACYDBNhUsLFd7EEl8r48azZZPModrrI5IrjbjHCOPaTL7y5rdVVBQ3PI1O2SDG8x0ULod84" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Form 2 Responses</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="https://docs.google.com/spreadsheets/d/1E35_TOM79C8EibZs1yB3klljpux3LlfkpIlRh_z_Z30/edit#gid=0" class="w3-bar-item w3-button">Edit page 1</a>
+          <a href="https://docs.google.com/spreadsheets/d/1GBUZzE1h1nlD9ovB6Mag4OGwyehj4-DAt7iHmqUBql0/edit#gid=1078623670" class="w3-bar-item w3-button">Edit page 2 of Responses</a>
+          <a href="https://kapilbishnoi90000.github.io/KAPIL/class-10-admin.html" class="w3-bar-item w3-button">Test Responses of Class 10</a>
+          <a href="https://kapilbishnoi90000.github.io/KAPIL/class-9-admin.html" class="w3-bar-item w3-button">Test Responses of Class 9</a>
+          <a href="https://kapilbishnoi90000.github.io/KAPIL/class-8-admin.html" class="w3-bar-item w3-button">Test Responses of Class 8</a>
+          <a href="https://kapilbishnoi90000.github.io/KAPIL/class-7-admin.html" class="w3-bar-item w3-button">Test Responses of Class 7</a>
+          <a href="https://kapilbishnoi90000.github.io/KAPIL/class-6-admin.html" class="w3-bar-item w3-button">Test Responses of Class 6</a>
+          <a href="https://kapilbishnoi90000.github.io/KAPIL/class-5-admin.html" class="w3-bar-item w3-button">Test Responses of Class 5</a>
+        </div>
       </div>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
     </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
-</div>
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
@@ -157,12 +225,12 @@ body {font-family: "Lato", sans-serif}
  <a href="https://docs.google.com/spreadsheets/d/1E35_TOM79C8EibZs1yB3klljpux3LlfkpIlRh_z_Z30/edit#gid=0" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Edit Pages 1</a>
  <a href="https://docs.google.com/spreadsheets/d/1GBUZzE1h1nlD9ovB6Mag4OGwyehj4-DAt7iHmqUBql0/edit#gid=1078623670" class="w3-bar-item w3-button">Edit page 2 of Responses</a>
  
- <a href="file:///C:/Users/rajur/Downloads/hover-2/COMING%20SOON.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Test Responses of Class 10</a>
- <a href="file:///C:/Users/rajur/Downloads/Test%20paper%201.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Test Responses of Class 9</a>
- <a href="file:///C:/Users/rajur/Downloads/Goals.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Test Responses of Class 8</a>
- <a href="file:///C:/Users/rajur/Downloads/Goals.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Test Responses of Class 7</a>
- <a href="file:///C:/Users/rajur/Downloads/Goals.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Test Responses of Class 6</a>
- <a href="file:///C:/Users/rajur/Downloads/Goals.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Test Responses of Class 5</a>
+ <a href="https://kapilbishnoi90000.github.io/KAPIL/class-10-admin.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Test Responses of Class 10</a>
+ <a href="https://kapilbishnoi90000.github.io/KAPIL/class-9-admin.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Test Responses of Class 9</a>
+ <a href="https://kapilbishnoi90000.github.io/KAPIL/class-8-admin.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Test Responses of Class 8</a>
+ <a href="https://kapilbishnoi90000.github.io/KAPIL/class-7-admin.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Test Responses of Class 7</a>
+ <a href="https://kapilbishnoi90000.github.io/KAPIL/class-6-admin.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Test Responses of Class 6</a>
+ <a href="https://kapilbishnoi90000.github.io/KAPIL/class-5-admin.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Test Responses of Class 5</a>
 </div>
 
 <!-- Page content -->
@@ -353,18 +421,49 @@ body {font-family: "Lato", sans-serif}
 </div>
 
 
+<div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+     
+        <a href="https://www.facebook.com/profile.php?id=100079083502765" ><i  class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com/its_mr.kapsa/" ><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/its_mr.kapsa/" ><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+                <a href="https://www.instagram.com/its_mr.kapsa/" ><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+                    <a href="https://www.instagram.com/its_mr.kapsa/" ><i class="fa fa-twitter w3-hover-opacity"></i></a>
+                        <a href="https://www.instagram.com/its_mr.kapsa/" ><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+                            <p class="w3-medium">Powered by Kapil Bishnoi </p>
+      </footer>
+   
+
+
+      <a href="https://kapilbishnoi90000.github.io/KAPIL/cridites.html" >
+        <button>
+          Credits 
+        </button></a>
+
+      </div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i  class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by Kapil Bishnoi </p>
-</footer>
+
 
 <script>
 // Automatic Slideshow - change image every 4 seconds
@@ -414,10 +513,21 @@ window.onclick = function(event) {
 
 
 
-<center><a href="#" ><img src="https://publications.wfp.org/2022/evaluation-capacity-report/images/Arrow-Sticker-by-NewSpring-Church-for-iOS--Android-GIPHY.gif" style="width:5% " ></a></center>
+
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
