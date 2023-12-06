@@ -628,7 +628,7 @@ html {
     }
 }
 
-// Center & dribbble
+// Center & dribbble 
 body {
     min-height: 100vh;
     display: flex;
@@ -885,29 +885,6 @@ button:hover .star-6 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ._social-links {
 	position: fixed;
 	right: 0;
@@ -943,8 +920,6 @@ button:hover .star-6 {
 	color: rgb(21, 255, 0);
 	font-size: 1.75rem;
 }
-
-
 
 
 
@@ -1038,7 +1013,188 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        #timer {
+            font-size: 3em;
+            color: #333;
+           position: absolute;
+        }
+
+        #word {
+            font-size: 2em;
+            color: #007BFF;
+            display: none;
+        }
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden; /* Hide page overflow to prevent scrolling when the popup is visible */
+        }
+
+        #popup-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0; /* Initially hidden */
+            visibility: hidden;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        #popup {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transform: translateY(-100%); /* Initially positioned above the viewport */
+            transition: transform 0.5s ease;
+        }
+
+        #popup-container.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #popup.active {
+            transform: translateY(0); /* Slide the popup into view */
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+        .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333333;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #009578;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
 </style>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
+  </script>
+
+
+
+
 </head>
 <body>
 
@@ -1051,17 +1207,21 @@ body {font-family: Arial, Helvetica, sans-serif;}
     <a href="https://kapilbishnoi90000.github.io/KAPIL/class.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CLASSES</a>
     <a href="https://kapilbishnoi90000.github.io/KAPIL/login.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOGIN</a>
     <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button> 
+         
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
         <a href="https://kapilbishnoi90000.github.io/KAPIL/notice%20board.html" class="w3-bar-item w3-button">Notice</a>
         <a href="https://kapilbishnoi90000.github.io/KAPIL/PDF-Page.html" class="w3-bar-item w3-button">PDF Of Clases</a>
         <a href="https://kapilbishnoi90000.github.io/KAPIL/Test%20paper%201.html" class="w3-bar-item w3-button">Take a Test</a>
         <a href="https://kapilbishnoi90000.github.io/KAPIL/Goals.html" class="w3-bar-item w3-button">Set Your Goals</a>
       </div>
+      
     </div>
     <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+   
   </div>
 </div>
+
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
@@ -1079,10 +1239,11 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
   <!-- Automatic Slideshow Images -->
   <div class="mySlides w3-display-container w3-center">
+    
     <img src="https://us.123rf.com/450wm/artbandung99/artbandung992202/artbandung99220200043/183290361-letter-v-and-k-logo-in-modern-style.jpg?ver=6" style=" position: absolute; width: 25px;">
     <img src="https://4kwallpapers.com/images/wallpapers/green-forest-woods-trails-pathway-sun-rays-glade-scenery-3840x2160-5696.jpg" style="width:80% " >
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-     
+      
       <h3 style="font-size: 90px">KAPIL BISHNOI</h3>
       
      
@@ -1205,6 +1366,91 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 
 
+  <!-- abcdefghijklmnopqrstuvwxyz
+  abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+v
+abcdefghijklmnopqrstuvwxyz
+
+  abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+v
+abcdefghijklmnopqrstuvwxyz
+v
+v
+v
+v
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+ -->
+<!-- abcdefghijklmnopqrstuvwxyz
+  abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+v
+abcdefghijklmnopqrstuvwxyz
+v
+v
+v
+v
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+ -->
+
+
+
+
+
+ <!--We will update you shortly.-->>
+<center>
+  <p>Update will be live in</p>
+<h1>We will update you shortly.</h1>
+
+</center>
+
+
+
+<div class="loader"></div>
 
 
 
@@ -1214,25 +1460,185 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 
 
+<script>
+    // Set the initial countdown value in seconds
+    let seconds = 600; // 10 minutes
 
+    function updateTimer() {
+        const timerElement = document.getElementById('timer');
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = seconds % 60;
 
+        // Format the time as "MM:SS"
+        const formattedTime = `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
 
+        timerElement.textContent = formattedTime;
 
+        if (seconds === 0) {
+            clearInterval(timerInterval);
+            alert('Time is up!');
+        } else {
+            seconds--;
+        }
+    }
+
+    // Call the updateTimer function every second
+    const timerInterval = setInterval(updateTimer, 1000);
+</script>
 
 
 
         
 
- <!-- The Band Section -->
- <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
- 
-  
 
 
 
 
 
+
+
+
+<!--Welcome.,Thankyou.,Check it out.Update will be live in any movement.,The update is live right now.-->
+<center>
+<div id="popup-container">
+  <div id="popup">
+    
+      <p>The update is live right now.</p>
+      <p>Check it out.</p>
+
+      <button class="popup123" onclick="closePopup()">Close</button>
+      
+  </div>
 </div>
+
+<script>
+  // Function to show the popup
+  function showPopup() {
+      const popupContainer = document.getElementById('popup-container');
+      const popup = document.getElementById('popup');
+
+      popupContainer.classList.add('active');
+      popup.classList.add('active');
+  }
+
+  // Function to close the popup
+  function closePopup() {
+      const popupContainer = document.getElementById('popup-container');
+      const popup = document.getElementById('popup');
+
+      popupContainer.classList.remove('active');
+      popup.classList.remove('active');
+  }
+
+  // Show the popup when the page is loaded
+  window.onload = showPopup;
+</script>
+</center>
+
+
+
+
+
+
+
+
+  <!-- abcdefghijklmnopqrstuvwxyz
+  abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+v
+abcdefghijklmnopqrstuvwxyz
+
+  abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+v
+abcdefghijklmnopqrstuvwxyz
+v
+v
+v
+v
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+ -->
+<!-- abcdefghijklmnopqrstuvwxyz
+  abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+v
+abcdefghijklmnopqrstuvwxyz
+v
+v
+v
+v
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1259,7 +1665,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
     </svg></a></li>
 	</ul>
 </aside>
-<i class="fa-brands fa-instagram"></i>
+
 
 
 
@@ -1427,6 +1833,320 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
     </div>
   </div>
+
+
+
+
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+
+       <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>KAPIL BISHNOI</h2>
+      </header>
+      <div class="w3-container">
+        
+        <p><label><i class="fa fa-user"></i> Sorry For The Inconvenience.</label></p>
+        <p><label><i class="fa fa-user"></i>We are looking forward for your course.</label></p>
+       
+        
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" onclick="document.getElementById('ticketModal').style.display='none'">THANKYOU<i class="fa fa-check"></i></button>
+        
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Nee Any Help<i class=""></i></button>
+       
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+<center>
+  <img src="https://media.istockphoto.com/id/1161156493/vector/home-office.jpg?s=612x612&w=0&k=20&c=O4l3sIIR7QmY4SvpRlIeWK8NeGuLGz3tAxtZt-Hq7qc="  style="width:30%" >
+  <img src="https://img.freepik.com/premium-vector/business-analytics_203633-301.jpg"  style="width:30%" >
+</center>
+
+    
+
+
+
+
+
+  
+
+ 
+
+      
+ 
+      <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center"></h2>
+      <p class="w3-opacity w3-center"><i></i></p><br>
+
+     
+    
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        
+        <div class="w3-third w3-margin-bottom">
+          
+          <img src="https://www.shutterstock.com/shutterstock/videos/1081934282/thumb/7.jpg?ip=x480" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Set your Goals</b></p>
+            <p class="w3-opacity">Avalable</p>
+            <p>Set your everyday Goals by writing in a page. </p>
+           
+            <a href="https://kapilbishnoi90000.github.io/KAPIL/Goals.html">
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">proceed</button>
+            </a>
+          </div>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScjTAA452hN-m2VXw9ZF_mSCIl6XRzR0uWdlDBo9cSZCK6thQ/viewform">
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://cdn.dribbble.com/users/183207/screenshots/2614645/media/74bd9d1d9de8733ac84ebcf47391e785.gif" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Send Request</b></p>
+            <p class="w3-opacity">Not Avalable</p>
+            <p>Send the request if there is any problem.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">proceed</button>
+          </div>
+        </div>
+        </a>
+        <a href="https://kapilbishnoi90000.github.io/KAPIL/PDF-Page.html">
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://cdn.dribbble.com/users/616823/screenshots/3120552/pdf-page-flip-animation.gif" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>PDF of Classes</b></p>
+            <p class="w3-opacity">Avalable</p>
+            <p></p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">proceed</button>
+          </div>
+        </a>
+        </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+        </div>
+       </div>
+     
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> All over india<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone:  XXXXXXXXXX <br>
+        <i class="fa fa-envelope" style="width:30px"> </i>kapilbishnoi8919@gmail.com<br>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></form>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScjTAA452hN-m2VXw9ZF_mSCIl6XRzR0uWdlDBo9cSZCK6thQ/viewform?usp=sf_link" >
+           <button  class="w3-button w3-black w3-section w3-right" name="submit" type="submit">Submit &#10132;</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  
+
+
+
+
+
+
+   <!-- The Tour Section -->
+   <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      
+          
+          
+           
+            
+        
+      
+       </div>
+     
+</div>
+
+
+
+
+
+
+
+<center>
+  <a href="https://kapilbishnoi90000.github.io/KAPIL/COMING%20SOON.html">
+<img  src="https://cbse.dpsnadergul.in/img/testimoanils-img.svg" style="width: 200px;">
+  </a>
+
+</center>
+ 
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<center>
+    <div class="w3-black" id="tour">
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+       
+          <i  class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+          <p class="w3-medium">Powered by Kapil Bishnoi </p>
+        </footer>
+     
+
+<a href="https://kapilbishnoi90000.github.io/KAPIL/cridites.html" >
+<button>
+  Credits 
+</button></a>
+        </div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<!-- End Page Content -->
+</div>
+
+
+
+
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
 
 
 
