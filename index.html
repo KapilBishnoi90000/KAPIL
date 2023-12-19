@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1294,6 +1295,36 @@ button.primary {
 	}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </style>
 
 
@@ -1324,19 +1355,19 @@ button.primary {
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="refreshPage()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSeI5FHZlDRfl4s5lQd3DJa374vwcmsr6dJmhPpakssEc-15tg/viewform" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SEND REQUEST</a>
-    <a href="https://kapilbishnoi90000.github.io/KAPIL/class.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CLASSES</a>
-    <a href="https://kapilbishnoi90000.github.io/KAPIL/login.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOGIN</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="refreshPage()">CLASSES</a>
+    <a href="https://kapilbishnoi90000.github.io/KAPIL/login.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="refreshPage()">LOGIN</a>
     <div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button> 
          
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="https://kapilbishnoi90000.github.io/KAPIL/notice%20board.html" class="w3-bar-item w3-button">Notice</a>
-        <a href="https://kapilbishnoi90000.github.io/KAPIL/PDF-Page.html" class="w3-bar-item w3-button">PDF Of Clases</a>
-        <a href="https://kapilbishnoi90000.github.io/KAPIL/Test%20paper%201.html" class="w3-bar-item w3-button">Take a Test</a>
-        <a href="https://kapilbishnoi90000.github.io/KAPIL/Goals.html" class="w3-bar-item w3-button">Set Your Goals</a>
+        <a href="#" class="w3-bar-item w3-button" onclick="refreshPage()">Notice</a>
+        <a href="#" class="w3-bar-item w3-button" onclick="refreshPage()">PDF Of Clases</a>
+        <a href="#" class="w3-bar-item w3-button" onclick="refreshPage()" >Take a Test</a>
+        <a href="#" class="w3-bar-item w3-button" onclick="refreshPage()">Set Your Goals</a>
       </div>
       
     </div>
@@ -1349,12 +1380,12 @@ button.primary {
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSeI5FHZlDRfl4s5lQd3DJa374vwcmsr6dJmhPpakssEc-15tg/viewform" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SEND REQUEST</a>
-  <a href="https://kapilbishnoi90000.github.io/KAPIL/class.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CLASSES</a>
+  <a href="" class="w3-bar-item w3-button w3-padding-large" onclick="refreshPage()">CLASSES</a>
   <a href="https://kapilbishnoi90000.github.io/KAPIL/login.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LOGIN</a>
- <a href="https://kapilbishnoi90000.github.io/KAPIL/notice%20board.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Notes</a>
- <a href="https://kapilbishnoi90000.github.io/KAPIL/PDF-Page.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PDF Of Clases</a>
- <a href="https://kapilbishnoi90000.github.io/KAPIL/Test%20paper%201.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Take a Test</a>
- <a href="https://kapilbishnoi90000.github.io/KAPIL/Goals.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Set Your Goals</a>
+ <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="refreshPage()">Notes</a>
+ <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="refreshPage()">PDF Of Clases</a>
+ <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="refreshPage()">Take a Test</a>
+ <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="refreshPage()">Set Your Goals</a>
 </div>
 
 <!-- Page content -->
@@ -1626,13 +1657,23 @@ abcdefghijklmnopqrstuvwxyz
 <div id="popup-container">
   <div id="popup">
     
-      <p>KAPIL BISHNOI</p>
-      <p>Welcome You.</p>
-
-      <button class="popup123" onclick="closePopup()">Close</button>
+    
+    <p class="kk@3170582" style="font-size: 25px;">Kapil Bishnoi</p>
+      <img src="https://i.pinimg.com/originals/19/00/54/19005430985f1e7e4022b4301b44ba35.gif" style="width: 350px;">
       
+      <a href="https://kapilbishnoi90000.github.io/KAPIL/login.html">
+      <button class="popup123" onclick="closePopup()">login</button></a>
+      <button class="popup123" onclick="closePopup()">login as guest</button>
+     <p>To use your max service please login</p>
   </div>
 </div>
+
+
+
+
+
+
+
 
 <script>
   // Function to show the popup
@@ -1871,24 +1912,26 @@ abcdefghijklmnopqrstuvwxyz
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
-          <a href="https://kapilbishnoi90000.github.io/KAPIL/class.html">
+          <a href="#">
           <img src="https://ehubstudio.com.au/wp-content/uploads/2022/07/ezgif-2-0bf623154e.gif" alt="Paris" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>Classe's</b></p>
-            <p class="w3-opacity">Not Avalable</p>
+            <p class="w3-opacity">Avalable</p>
             <p>See the Classe's from the book NCERT and etc.</p>
 
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">proceed</button>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="refreshPage()">proceed</button>
           </div>
           </a>
         </div>
+        <a href="#">
         <div class="w3-third w3-margin-bottom">
           <img src="https://img.freepik.com/free-vector/flat-tiny-people-innovation-concept-business-partner-generating-idea-projects_513217-79.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>General Knowledge</b></p>
             <p class="w3-opacity">Not Avalable</p>
             <p>Get the Everyday Genaral Kenloge.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">proceed</button>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="refreshPage()" >proceed</button>
+          </a>
           </div>
         </div>
       </div>
@@ -1897,12 +1940,13 @@ abcdefghijklmnopqrstuvwxyz
 
 
 
+      <!--Welcome.,Thankyou.,Check it out.Update will be live in any movement.,The update is live right now.-->
 
-
-
+  
 <center>
+  <a href="#">
   <hrf>
-      <button class="101010" onclick="window.dialog.showModal();" >Schlorship Test
+      <button class="101010" onclick="refreshPage()" >Schlorship Test
         <div class="star-1">
           <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
         </div>
@@ -1923,10 +1967,15 @@ abcdefghijklmnopqrstuvwxyz
         </div>
       </button>
 </center>
+</a>
 
 
-
-
+<script>
+  // JavaScript function to refresh the page
+  function refreshPage() {
+      location.reload(true); // Pass true to force a reload from the server and not from the cache
+  }
+</script>
 
 
 
@@ -2013,6 +2062,27 @@ abcdefghijklmnopqrstuvwxyz
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <center>
   <img src="https://media.istockphoto.com/id/1161156493/vector/home-office.jpg?s=612x612&w=0&k=20&c=O4l3sIIR7QmY4SvpRlIeWK8NeGuLGz3tAxtZt-Hq7qc="  style="width:30%" >
   <img src="https://img.freepik.com/premium-vector/business-analytics_203633-301.jpg"  style="width:30%" >
@@ -2037,7 +2107,7 @@ abcdefghijklmnopqrstuvwxyz
       <p class="w3-opacity w3-center"><i></i></p><br>
 
      
-    
+      
       <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
         
         <div class="w3-third w3-margin-bottom">
@@ -2047,31 +2117,36 @@ abcdefghijklmnopqrstuvwxyz
             <p><b>Set your Goals</b></p>
             <p class="w3-opacity">Avalable</p>
             <p>Set your everyday Goals by writing in a page. </p>
-           
-            <a href="https://kapilbishnoi90000.github.io/KAPIL/Goals.html">
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">proceed</button>
+            <a href="#">
+            
+            <button class="w3-button w3-black w3-margin-bottom" onclick="refreshPage()">proceed</button>
             </a>
+            
+
+
           </div>
         </div>
+
+
         <a href="https://docs.google.com/forms/d/e/1FAIpQLScjTAA452hN-m2VXw9ZF_mSCIl6XRzR0uWdlDBo9cSZCK6thQ/viewform">
         <div class="w3-third w3-margin-bottom">
           <img src="https://cdn.dribbble.com/users/183207/screenshots/2614645/media/74bd9d1d9de8733ac84ebcf47391e785.gif" alt="Paris" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>Send Request</b></p>
-            <p class="w3-opacity">Not Avalable</p>
+            <p class="w3-opacity">Avalable</p>
             <p>Send the request if there is any problem.</p>
             <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">proceed</button>
           </div>
         </div>
         </a>
-        <a href="https://kapilbishnoi90000.github.io/KAPIL/PDF-Page.html">
+        <a href="#">
         <div class="w3-third w3-margin-bottom">
           <img src="https://cdn.dribbble.com/users/616823/screenshots/3120552/pdf-page-flip-animation.gif" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>PDF of Classes</b></p>
             <p class="w3-opacity">Avalable</p>
             <p></p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">proceed</button>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="refreshPage()">proceed</button>
           </div>
         </a>
         </div>
@@ -2172,49 +2247,6 @@ abcdefghijklmnopqrstuvwxyz
  
 
    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<center>
-    <div class="w3-black" id="tour">
-      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-       
-          <i  class="fa fa-facebook-official w3-hover-opacity"></i>
-          <i class="fa fa-instagram w3-hover-opacity"></i>
-          <i class="fa fa-snapchat w3-hover-opacity"></i>
-          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-          <i class="fa fa-twitter w3-hover-opacity"></i>
-          <i class="fa fa-linkedin w3-hover-opacity"></i>
-          <p class="w3-medium">Powered by Kapil Bishnoi </p>
-        </footer>
-     
-
-<a href="https://kapilbishnoi90000.github.io/KAPIL/cridites.html" >
-<button>
-  Credits 
-</button></a>
-        </div></div>
-
-
-
-
-
 
 
 
@@ -2343,62 +2375,6 @@ window.onclick = function(event) {
  
 
       
- 
-      <!-- The Tour Section -->
-  <div class="w3-black" id="tour">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center"></h2>
-      <p class="w3-opacity w3-center"><i></i></p><br>
-
-     
-    
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        
-        <div class="w3-third w3-margin-bottom">
-          
-          <img src="https://www.shutterstock.com/shutterstock/videos/1081934282/thumb/7.jpg?ip=x480" alt="New York" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Set your Goals</b></p>
-            <p class="w3-opacity">Avalable</p>
-            <p>Set your everyday Goals by writing in a page. </p>
-           
-            <a href="https://kapilbishnoi90000.github.io/KAPIL/Goals.html">
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">proceed</button>
-            </a>
-          </div>
-        </div>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScjTAA452hN-m2VXw9ZF_mSCIl6XRzR0uWdlDBo9cSZCK6thQ/viewform">
-        <div class="w3-third w3-margin-bottom">
-          <img src="https://cdn.dribbble.com/users/183207/screenshots/2614645/media/74bd9d1d9de8733ac84ebcf47391e785.gif" alt="Paris" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Send Request</b></p>
-            <p class="w3-opacity">Not Avalable</p>
-            <p>Send the request if there is any problem.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">proceed</button>
-          </div>
-        </div>
-        </a>
-        <a href="https://kapilbishnoi90000.github.io/KAPIL/PDF-Page.html">
-        <div class="w3-third w3-margin-bottom">
-          <img src="https://cdn.dribbble.com/users/616823/screenshots/3120552/pdf-page-flip-animation.gif" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>PDF of Classes</b></p>
-            <p class="w3-opacity">Avalable</p>
-            <p></p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">proceed</button>
-          </div>
-        </a>
-        </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-        </div>
-       </div>
-     
-</div>
-
 
 
 
@@ -2457,19 +2433,6 @@ window.onclick = function(event) {
 
 
 
-   <!-- The Tour Section -->
-   <div class="w3-black" id="tour">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      
-          
-          
-           
-            
-        
-      
-       </div>
-     
-</div>
 
 
 
@@ -2477,12 +2440,7 @@ window.onclick = function(event) {
 
 
 
-<center>
-  <a href="https://kapilbishnoi90000.github.io/KAPIL/COMING%20SOON.html">
-<img  src="https://cbse.dpsnadergul.in/img/testimoanils-img.svg" style="width: 200px;">
-  </a>
 
-</center>
  
 
    
