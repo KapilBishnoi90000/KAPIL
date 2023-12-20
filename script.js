@@ -26,6 +26,10 @@ function auth(){
      {  window.location.assign ("https://kapilbishnoi90000.github.io/KAPIL/Admin-page-8383.html");
      alert("Logged in successfully ✅.Click ok for Next");
     }
+    if(email=="kapilbishnoi8919-90000" && password=="kk@3170582")
+     {  window.location.assign ("https://kapilbishnoi90000.github.io/KAPIL/kapilbishnoi8919-90000.html");
+     alert("Logged in successfully ✅.Click ok for Next");
+    }
     else{
         alert("Invalid ID or Password");
         return;
