@@ -23,11 +23,11 @@ function auth(){
     
     var password = document.getElementById("password").value;
      if(email=="kapilbishnoi@90000" && password=="kapilbishnoi@3170582")
-     {  window.location.assign ("https://kapilbishnoi90000.github.io/KAPIL/Admin-page-8383.html");
+     {  window.location.assign ("https://kapilbishnoi90000.github.io/KAPIL/Done.html");
      alert("Logged in successfully ✅.Click ok for Next");
     }
     if(email=="kapilbishnoi8919-90000" && password=="kk@3170582")
-     {  window.location.assign ("https://kapilbishnoi90000.github.io/KAPIL/kapilbishnoi8919-90000.html");
+     {  window.location.assign ("https://kapilbishnoi90000.github.io/KAPIL/Done.html");
      alert("Logged in successfully ✅.Click ok for Next");
     }
     else{
