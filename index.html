@@ -17,7 +17,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 
@@ -1317,18 +1318,6 @@ button.primary {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .badge{
     position: absolute;
     right: 50px;
@@ -1370,7 +1359,7 @@ button.primary {
 
 
 
-.animation-container {
+    .animation-container {
       position: relative;
       animation: bounce 2s infinite;
     }
@@ -1446,39 +1435,6 @@ button.primary {
             bottom: 0;
             width: 100%;
         }
-
-
-
-
-
-
-
-        .scroll-box {
-            width: 350px; /* Set your desired width */
-            height: 280px; /* Set your desired height */
-            overflow: auto;
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-        hr {
-      border: 0; /* Remove default border */
-      height: 1px; /* Set the height of the line */
-      background-color: rgb(136, 134, 134); /* Set the line color to black */
-      margin: 10px 0; /* Add some margin for spacing */
-    }
 </style>
 
 
@@ -1498,6 +1454,27 @@ button.primary {
   });
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </script>
 
 
@@ -1509,19 +1486,19 @@ button.primary {
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="refreshPage()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeI5FHZlDRfl4s5lQd3DJa374vwcmsr6dJmhPpakssEc-15tg/viewform" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SEND REQUEST</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="refreshPage()">CLASSES</a>
-    <a href="https://kapilbishnoi90000.github.io/KAPIL/login.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="refreshPage()">LOGIN</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeI5FHZlDRfl4s5lQd3DJa374vwcmsr6dJmhPpakssEc-15tg/viewform" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Send Request</a>
+    <a href="https://kapilbishnoi90000.github.io/KAPIL/class.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Classes</a>
+    <a href="https://kapilbishnoi90000.github.io/KAPIL/login.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Settings</a>
     <div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button> 
          
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button" onclick="refreshPage()">Notice</a>
-        <a href="#" class="w3-bar-item w3-button" onclick="refreshPage()">PDF Of Clases</a>
-        <a href="#" class="w3-bar-item w3-button" onclick="refreshPage()" >Take a Test</a>
-        <a href="#" class="w3-bar-item w3-button" onclick="refreshPage()">Set Your Goals</a>
+        <a href="https://kapilbishnoi90000.github.io/KAPIL/notice%20board.html" class="w3-bar-item w3-button">Notice</a>
+        <a href="https://kapilbishnoi90000.github.io/KAPIL/PDF-Page.html" class="w3-bar-item w3-button">PDF Of Clases</a>
+        <a href="https://kapilbishnoi90000.github.io/KAPIL/Test%20paper%201.html" class="w3-bar-item w3-button">Take a Test</a>
+        <a href="https://kapilbishnoi90000.github.io/KAPIL/Goals.html" class="w3-bar-item w3-button">Set Your Goals</a>
       </div>
       
     </div>
@@ -1533,13 +1510,13 @@ button.primary {
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeI5FHZlDRfl4s5lQd3DJa374vwcmsr6dJmhPpakssEc-15tg/viewform" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SEND REQUEST</a>
-  <a href="" class="w3-bar-item w3-button w3-padding-large" onclick="refreshPage()">CLASSES</a>
-  <a href="https://kapilbishnoi90000.github.io/KAPIL/login.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LOGIN</a>
- <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="refreshPage()">Notes</a>
- <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="refreshPage()">PDF Of Clases</a>
- <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="refreshPage()">Take a Test</a>
- <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="refreshPage()">Set Your Goals</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeI5FHZlDRfl4s5lQd3DJa374vwcmsr6dJmhPpakssEc-15tg/viewform" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Send Request</a>
+  <a href="https://kapilbishnoi90000.github.io/KAPIL/class.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Classes</a>
+  <a href="https://kapilbishnoi90000.github.io/KAPIL/login.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Settings</a>
+ <a href="https://kapilbishnoi90000.github.io/KAPIL/notice%20board.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Notes</a>
+ <a href="https://kapilbishnoi90000.github.io/KAPIL/PDF-Page.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PDF Of Clases</a>
+ <a href="https://kapilbishnoi90000.github.io/KAPIL/Test%20paper%201.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Take a Test</a>
+ <a href="https://kapilbishnoi90000.github.io/KAPIL/Goals.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Set Your Goals</a>
 </div>
 
 <!-- Page content -->
@@ -1549,12 +1526,10 @@ button.primary {
   <div class="mySlides w3-display-container w3-center">
     
     <img src="https://us.123rf.com/450wm/artbandung99/artbandung992202/artbandung99220200043/183290361-letter-v-and-k-logo-in-modern-style.jpg?ver=6" style=" position: absolute; width: 25px;">
-
+    <p style=" position: absolute; width: 25px;">Free </p>
     <img src="https://static.vecteezy.com/system/resources/previews/026/481/290/large_2x/the-world-of-classic-muscle-cars-with-this-captivating-4k-wallpaper-free-photo.jpg" style="width:70% " >
-
-
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      
+        
       <h3 style="font-size: 90px">KAPIL BISHNOI</h3>
       
      
@@ -1573,39 +1548,29 @@ button.primary {
   
   
   </div>
-
+  
   <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">KAPIL BISHNOI</h2>
+    <h2 class="w3-wide">Kapil Bishnoi</h2>
     <p class="w3-opacity"><i></i></p>
-    <p class="w3-justify">We have created a Educational website. 
-        In this website you can get your required Note, class, sample paper, test, Question paper, 
-        ets. and you can see all your score and many more thing.
-         we welcome our all students to wisite our web and check our latest 
-         updates . The company Kapil Bishnoi was built in 2023.Thankyou We Always Look Further For You.
-         </p>
+    
 
+    <div id="scroll-container">
+      <div id="scroll-text">Home-Page<div>
+        
 
-         <div id="scroll-container">
-            <div id="scroll-text">Home-Page<div>
           </div>
           </div>
           </div>
 
 
-            
-          <img src="https://i.pinimg.com/originals/d7/3d/a1/d73da1de105b57de036e62fc45f2a9ae.gif" style="width: 300px;">
-              
+
+
+          
           
           </div>
         </div>
        
-
-       
-       
-
-
-
 
 
 
@@ -1622,12 +1587,6 @@ button.primary {
   <div class="w3-black" id="tour">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       
-
-
-     
-        
-
-
       <div class="slider-container">
         <div class="slides">
           
@@ -1765,48 +1724,41 @@ abcdefghijklmnopqrstuvwxyz
 
 
 
-
-
-
-
-
-  <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-<h3>Online Education </h3>
-    <p class="w3-opacity"><i></i></p>
-    <center>
-        <img  src="https://elearningindustry.com/wp-content/uploads/2020/11/how-to-use-animation-for-online-courses.jpg" style="width: 350px; " >
-        <img src="https://designtemlate.s3.us-west-1.wasabisys.com/wed-jan-11-2023-1-20-pm90081.webp"style="width: 350px; ">
-       
-       <h5>Unlock boundless learning opportunities with our innovative online education platform, where knowledge meets convenience in the digital realm, shaping a brighter future at your fingertips.</h5>
-       </center>
-          </div>
-          </div>
-          </div>
-
-
-            
-          
-              
-          
-          </div>
-        </div>
-
-
-
-
-        <hr>
-
  <!--We will update you shortly.13/6/2023-8:30 PM.-->
-<center>
-  <p>The update will be live in</p>
-<h2>We will update you shortly.</h2>
-
-</center>
 
 
 
-<div class="loader"></div>
+ <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+  <h3>Online Education </h3>
+      <p class="w3-opacity"><i></i></p>
+      <center>
+          <img src="https://designtemlate.s3.us-west-1.wasabisys.com/wed-jan-11-2023-1-20-pm90081.webp"style="width: 350px; ">
+         
+         <h5>Unlock boundless learning opportunities with our innovative online education platform, where knowledge meets convenience in the digital realm, shaping a brighter future at your fingertips.</h5>
+         </center>
+            </div>
+            </div>
+            </div>
+  
+  
+              
+            
+                
+            
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+ <div class="loader"></div>
 
 
 
@@ -1855,20 +1807,44 @@ abcdefghijklmnopqrstuvwxyz
 
 
 <!--Welcome.,Thankyou.,Check it out.Update will be live in any movement.,The update is live right now.-->
-<center>
-<div id="popup-container">
-  <div id="popup">
-    
-    
-    <p class="kk@3170582" style="font-size: 25px;">Kapil Bishnoi</p>
-      <img src="https://i.pinimg.com/originals/19/00/54/19005430985f1e7e4022b4301b44ba35.gif" style="width: 350px;">
+
+  <div id="popup-container">
+    <div id="popup">
       
-      <a href="https://kapilbishnoi90000.github.io/KAPIL/login.html">
-      <button class="popup123" onclick="closePopup()">login</button></a>
-      <button class="popup123" onclick="closePopup()">login as guest</button>
-     <p>To use your max service please login</p>
+  <img src="https://us.123rf.com/450wm/artbandung99/artbandung992202/artbandung99220200043/183290361-letter-v-and-k-logo-in-modern-style.jpg?ver=6" style="width: 20px;">
+  <center>
+  <img src="https://i.pinimg.com/originals/19/00/54/19005430985f1e7e4022b4301b44ba35.gif" style="width: 300px;">
+        
+        <a href="https://kapilbishnoi90000.github.io/KAPIL/login.html">
+        <button class="popup123" onclick="closePopup()" style="background-color: #ffa600;">login</button></a>
+        <button class="popup123" onclick="closePopup()" style="background-color: #27ec2e;">Guest</button>
+       <p>To keep tracking your score please login. And use our top service.</p>
+    </div>
   </div>
-</div>
+
+
+
+
+
+
+
+  
+         
+            
+            
+   
+       
+  
+ 
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1993,8 +1969,7 @@ abcdefghijklmnopqrstuvwxyz
 
 
 
-
-<aside class="_social-links">
+ <aside class="_social-links">
 	<ul class="_links-list">
 		<li class="_social-link"><a  target="_blank"><svg onclick="openForm()"  width="16" height="16" fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
       <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07M9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0zM1 4v2h6V4zm8 0v2h6V4zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5z"/>
@@ -2094,13 +2069,12 @@ abcdefghijklmnopqrstuvwxyz
   <!-- The Tour Section -->
   <div class="w3-black" id="tour">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">Availability</h2>
+      <h2 class="w3-wide w3-center">Free Opportunities</h2>
       <p class="w3-opacity w3-center"><i></i></p><br>
 
       <ul class="w3-ul w3-border w3-white w3-text-grey">
-       <a href="https://kapilbishnoi90000.github.io/KAPIL/notice%20board.html"> <li class="w3-padding">Notice<span class="w3-tag w3-red w3-margin-left">     5 </span></li></a>
-       <a href="https://kapilbishnoi90000.github.io/KAPIL/PDF-Page.html"><li class="w3-padding">PDF of Classes<span class="w3-tag w3-red w3-margin-left">      </span></li></a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScN6EDWmn0b0MyBzf_mQULPIKnDLbdhdc93J-Tx3a-OQV_bgw/viewform"><li class="w3-padding">Next Shclorship test is on 18/December/2023<span class="w3-badge w3-right w3-margin-right">1</span></li></a>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScN6EDWmn0b0MyBzf_mQULPIKnDLbdhdc93J-Tx3a-OQV_bgw/viewform"><li class="w3-padding">Next Shclorship test is on 18/December/2023 <span class="w3-tag w3-red w3-margin-left">     5 </span><span class="w3-badge w3-right w3-margin-right">1</span></li></a>
         
     </ul>
     https://kapilbishnoi90000.github.io/KAPIL/
@@ -2118,26 +2092,24 @@ abcdefghijklmnopqrstuvwxyz
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
-          <a href="#">
+          <a href="https://kapilbishnoi90000.github.io/KAPIL/class.html">
           <img src="https://ehubstudio.com.au/wp-content/uploads/2022/07/ezgif-2-0bf623154e.gif" alt="Paris" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>Classe's</b></p>
-            <p class="w3-opacity">Avalable</p>
+            <p class="w3-opacity">Not Avalable</p>
             <p>See the Classe's from the book NCERT and etc.</p>
 
-            <button class="w3-button w3-black w3-margin-bottom" onclick="refreshPage()">proceed</button>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">proceed</button>
           </div>
           </a>
         </div>
-        <a href="#">
         <div class="w3-third w3-margin-bottom">
           <img src="https://img.freepik.com/free-vector/flat-tiny-people-innovation-concept-business-partner-generating-idea-projects_513217-79.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>General Knowledge</b></p>
             <p class="w3-opacity">Not Avalable</p>
             <p>Get the Everyday Genaral Kenloge.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="refreshPage()" >proceed</button>
-          </a>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">proceed</button>
           </div>
         </div>
       </div>
@@ -2146,13 +2118,12 @@ abcdefghijklmnopqrstuvwxyz
 
 
 
-      <!--Welcome.,Thankyou.,Check it out.Update will be live in any movement.,The update is live right now.-->
 
-  
+
+
 <center>
-  <a href="#">
   <hrf>
-      <button class="101010" onclick="refreshPage()" >Schlorship Test
+      <button class="101010" onclick="window.dialog.showModal();" >Schlorship Test
         <div class="star-1">
           <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
         </div>
@@ -2173,15 +2144,10 @@ abcdefghijklmnopqrstuvwxyz
         </div>
       </button>
 </center>
-</a>
 
 
-<script>
-  // JavaScript function to refresh the page
-  function refreshPage() {
-      location.reload(true); // Pass true to force a reload from the server and not from the cache
-  }
-</script>
+
+
 
 
 
@@ -2218,6 +2184,16 @@ abcdefghijklmnopqrstuvwxyz
     </button>
     <a>
 </center>
+
+
+
+
+
+
+
+
+
+
 </dialog>
 
 
@@ -2270,35 +2246,14 @@ abcdefghijklmnopqrstuvwxyz
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<center>
-  <img src="https://media.istockphoto.com/id/1161156493/vector/home-office.jpg?s=612x612&w=0&k=20&c=O4l3sIIR7QmY4SvpRlIeWK8NeGuLGz3tAxtZt-Hq7qc="  style="width:30%" >
-  <img src="https://img.freepik.com/premium-vector/business-analytics_203633-301.jpg"  style="width:30%" >
-</center>
-
     
 
 
 
-
+  <center>
+    <img src="https://www.mpowero.com/wp-content/uploads/2020/09/What-is-Online-Learning-like-with-mPowerO.png"  style="width:25%" >
+    <img src="https://miro.medium.com/v2/resize:fit:1358/1*f01nOh67hxPH7MUjiA-FFg.gif"  style="width:25%" >
+  </center>
 
   
 
@@ -2313,7 +2268,7 @@ abcdefghijklmnopqrstuvwxyz
       <p class="w3-opacity w3-center"><i></i></p><br>
 
      
-      
+    
       <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
         
         <div class="w3-third w3-margin-bottom">
@@ -2323,17 +2278,12 @@ abcdefghijklmnopqrstuvwxyz
             <p><b>Set your Goals</b></p>
             <p class="w3-opacity">Avalable</p>
             <p>Set your everyday Goals by writing in a page. </p>
-            <a href="#">
-            
-            <button class="w3-button w3-black w3-margin-bottom" onclick="refreshPage()">proceed</button>
+           
+            <a href="https://kapilbishnoi90000.github.io/KAPIL/Goals.html">
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">proceed</button>
             </a>
-            
-
-
           </div>
         </div>
-
-
         <a href="https://kapilbishnoi90000.github.io/KAPIL/Scholarship-test-1-Information.html">
         <div class="w3-third w3-margin-bottom">
           <img src="https://i.pinimg.com/originals/9e/c9/1e/9ec91e76f91a705a9c6b84022cdd8f6e.gif" alt="Paris" style="width:100%" class="w3-hover-opacity">
@@ -2345,73 +2295,42 @@ abcdefghijklmnopqrstuvwxyz
           </div>
         </div>
         </a>
-        <a href="#">
+        <a href="https://kapilbishnoi90000.github.io/KAPIL/PDF-Page.html">
         <div class="w3-third w3-margin-bottom">
           <img src="https://cdn.dribbble.com/users/616823/screenshots/3120552/pdf-page-flip-animation.gif" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>PDF of Classes</b></p>
             <p class="w3-opacity">Avalable</p>
             <p></p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="refreshPage()">proceed</button>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">proceed</button>
           </div>
         </a>
-        </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
         </div>
        </div>
-     
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Drop a note!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> All over india<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone:  XXXXXXXXXX <br>
-        <i class="fa fa-envelope" style="width:30px"> </i>kapilbishnoi8919@gmail.com<br>
-      </div>
-
-
-
-
-
-
-
-
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></form>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScjTAA452hN-m2VXw9ZF_mSCIl6XRzR0uWdlDBo9cSZCK6thQ/viewform?usp=sf_link" >
-           <button  class="w3-button w3-black w3-section w3-right" name="submit" type="submit">Submit &#10132;</button>
-        </a>
+       </div>
       </div>
     </div>
-  </div>
+    </div>
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+     
 
 
 
@@ -2448,9 +2367,14 @@ abcdefghijklmnopqrstuvwxyz
   <a href="https://kapilbishnoi90000.github.io/KAPIL/COMING%20SOON.html">
 <img  src="https://cbse.dpsnadergul.in/img/testimoanils-img.svg" style="width: 200px;">
   </a>
- 
+
 </center>
  
+
+
+
+
+
 
 
 
@@ -2516,337 +2440,258 @@ window.onclick = function(event) {
 
 
 
-
-
-
-
-
-
-
-
-
-</body>
-</html>
-
-
-
-
-
-  <!-- Ticket Modal -->
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-
-       <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>KAPIL BISHNOI</h2>
-      </header>
-      <div class="w3-container">
-        
-        <p><label><i class="fa fa-user"></i> Sorry For The Inconvenience.</label></p>
-        <p><label><i class="fa fa-user"></i>We are looking forward for your course.</label></p>
-       
-        
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" onclick="document.getElementById('ticketModal').style.display='none'">THANKYOU<i class="fa fa-check"></i></button>
-        
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Nee Any Help<i class=""></i></button>
-       
-        
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
+ 
 <center>
-  <img src="https://media.istockphoto.com/id/1161156493/vector/home-office.jpg?s=612x612&w=0&k=20&c=O4l3sIIR7QmY4SvpRlIeWK8NeGuLGz3tAxtZt-Hq7qc="  style="width:30%" >
-  <img src="https://img.freepik.com/premium-vector/business-analytics_203633-301.jpg"  style="width:30%" >
-</center>
-
-    
-
-
-
-
-
-  
-
- 
-
-      
-
-
-
-
-
-
-
-
-
-
-
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Drop a note!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> All over india<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone:  XXXXXXXXXX <br>
-        <i class="fa fa-envelope" style="width:30px"> </i>kapilbishnoi8919@gmail.com<br>
-      </div>
-
-
-
-
-
-
-
-
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></form>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScjTAA452hN-m2VXw9ZF_mSCIl6XRzR0uWdlDBo9cSZCK6thQ/viewform?usp=sf_link" >
-           <button  class="w3-button w3-black w3-section w3-right" name="submit" type="submit">Submit &#10132;</button>
-        </a>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="w3-black" id="tour">
-    <center>
-      <p style="color: #000000;">.</p>
-    <img src="https://pbs.twimg.com/media/GAWFcptagAA45a6?format=png&name=small" style="width: 150px;">
-    <p style="color: #000000;">.</p>
- 
-    <p> Kapil Bishnoi is democratising education,</p>
-    <p>making it accessible to all. Join the revolution,</p>
-    <p>learn on free learning platform.</p>
-    <p style="color: #000000;">.</p>
-    <p>Totally free education</p>
-    <img src="https://media0.giphy.com/media/IhIDRwEVka6plLPC9z/giphy.gif" style="width: 70px;">
-
-    <p>Subjects we teach : Social, Hindi, Math,</p>
-    <p> Science, General Knowledge.</p>
-    <p style="color: #000000;">.</p>
-    <p>Classes we teach : 1st , 2nd , 3rd , 4th , 5th , 6th , 7th , 8th , 9th ,10th</p>
+    <img src="https://media.istockphoto.com/id/1161156493/vector/home-office.jpg?s=612x612&w=0&k=20&c=O4l3sIIR7QmY4SvpRlIeWK8NeGuLGz3tAxtZt-Hq7qc="  style="width:30%" >
+    <img src="https://img.freepik.com/premium-vector/business-analytics_203633-301.jpg"  style="width:30%" >
   </center>
-
   
+      
+  
+  
+  
+  
+  
+    <!-- The Contact Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center">CONTACT</h2>
+        <p class="w3-opacity w3-center"><i>Drop a note!</i></p>
+        <div class="w3-row w3-padding-32">
+          <div class="w3-col m6 w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker" style="width:30px"></i> All over india<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone:  XXXXXXXXXX <br>
+            <i class="fa fa-envelope" style="width:30px"> </i>kapilbishnoi8919@gmail.com<br>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="w3-col m6">
+            <form action="/action_page.php" target="_blank">
+              <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                <div class="w3-half">
+                  <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                </div>
+                <div class="w3-half">
+                  <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                </div>
+              </div>
+              <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></form>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScjTAA452hN-m2VXw9ZF_mSCIl6XRzR0uWdlDBo9cSZCK6thQ/viewform?usp=sf_link" >
+               <button  class="w3-button w3-black w3-section w3-right" name="submit" type="submit">Submit &#10132;</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    
+    
+    
+ 
+
+   
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="w3-black" id="tour">
+        <center>
+          <p style="color: #000000;">.</p>
+        <img src="https://pbs.twimg.com/media/GAWFcptagAA45a6?format=png&name=small" style="width: 150px;">
+        <p style="color: #000000;">.</p>
+     
+        <p> Kapil Bishnoi is democratising education,</p>
+        <p>making it accessible to all. Join the revolution,</p>
+        <p>learn on free learning platform.</p>
+        <p style="color: #000000;">.</p>
+        <p>Totally free education</p>
+        <img src="https://media0.giphy.com/media/IhIDRwEVka6plLPC9z/giphy.gif" style="width: 70px;">
+    
+        <p>Subjects we teach : Social, Hindi, Math,</p>
+        <p> Science, General Knowledge.</p>
+        <p style="color: #000000;">.</p>
+        <p>Classes we teach : 5th , 6th , 7th , 8th , 9th ,10th</p>
+      </center>
     
       
-      <center>
-     
+    
+    
+    
+    
+    
+    
         
-        
-      </footer>
-   
-      <p style="color: #000000;">.</p>
-      <a href="https://kapilbishnoi90000.github.io/KAPIL/cridites.html" >
-      
-<button  class="w3-button w3-black w3-margin-bottom" > Credits</button>
-</a>
-<a href="https://kapilbishnoi90000.github.io/KAPIL/COMING%20SOON.html" >
-
-<button class="w3-button w3-black w3-margin-bottom" > Terms</button>
-</a>
-<a href="https://kapilbishnoi90000.github.io/KAPIL/COMING%20SOON.html" >
-<button class="w3-button w3-black w3-margin-bottom" >Aabout us</button>
-</a>
-
-
-<hr>
-<center>
-
-
-<img src="https://cdn.pixabay.com/photo/2021/05/24/09/15/google-logo-6278331_1280.png" style="width: 25px;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" style="width: 25px;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" style="width: 25px;">
-<img src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.1412446893.1704794400&semt=ais" style="width: 27px;">
-<img src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png" style="width: 28px;">
-<img src="https://static.wikia.nocookie.net/google/images/7/72/Logo-gmail.png/revision/latest?cb=20201214214241" style="width: 25px;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" style="width: 25px;">
-<p style="color: #000000;">.</p>
-<p>kapilbishnoi8919@gmail.com / rajurambishnoi90000@gmail.com </p>
-<p class="w3-medium">Powered by Kapil Bishnoi</p>
-<p>@ 2024-2025</p>
-<p style="color: #000000;">.</p>
-<div class="animation-container">
-  <div class="thank-you-text">Thank You!</div>
-</div>
-<p style="color: #000000;">.</p>
-<p style="color: #000000;">..</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</center>
-
-</div>
-</div>
-</div>
- </div>
-  </div>
-   </div>
+          
+          <center>
+         
+            
+            
+          </footer>
+       
+          <p style="color: #000000;">.</p>
+          <a href="https://kapilbishnoi90000.github.io/KAPIL/cridites.html" >
+          
+    <button  class="w3-button w3-black w3-margin-bottom" > Credits</button>
+    </a>
+    <a href="https://kapilbishnoi90000.github.io/KAPIL/COMING%20SOON.html" >
+    
+    <button class="w3-button w3-black w3-margin-bottom" > Terms</button>
+    </a>
+    <a href="https://kapilbishnoi90000.github.io/KAPIL/COMING%20SOON.html" >
+    <button class="w3-button w3-black w3-margin-bottom" >Aabout us</button>
+    </a>
+    
+    
+    <hr>
+    <center>
+    
+    
+    <img src="https://cdn.pixabay.com/photo/2021/05/24/09/15/google-logo-6278331_1280.png" style="width: 25px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" style="width: 25px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" style="width: 25px;">
+    <img src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.1412446893.1704794400&semt=ais" style="width: 27px;">
+    <img src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png" style="width: 28px;">
+    <img src="https://static.wikia.nocookie.net/google/images/7/72/Logo-gmail.png/revision/latest?cb=20201214214241" style="width: 25px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" style="width: 25px;">
+    <p style="color: #000000;">.</p>
+    <p>kapilbishnoi8919@gmail.com / rajurambishnoi90000@gmail.com </p>
+    <p class="w3-medium">Powered by Kapil Bishnoi</p>
+    <p>@ 2024-2025</p>
+    <p>Copyright © 2024</p>
+    <p style="color: #000000;">.</p>
+    <div class="animation-container">
+      <div class="thank-you-text">Thank You!</div>
+    </div>
+    <p style="color: #000000;">.</p>
+    <p style="color: #000000;">..</p>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </center>
+    
+    </div>
+    </div>
     </div>
      </div>
       </div>
-
-
-      
-      
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- End Page Content -->
-</div>
-
-
-
-
-
-
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<footer>
-    @ 2024-2025 Kapil Bishnoi.
-  </footer>
-</body>
-</html>
+       </div>
+        </div>
+         </div>
+          </div>
+    
+    
+          
+          
+    
+    
+    
+          
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- End Page Content -->
+    </div>
+    
+    
+    
+    
+    
+    
+    <script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 4000);    
+    }
+    
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <footer>
+        @ 2024-2025 Kapil Bishnoi.
+       
+      </footer>
+    </body>
+    </html>
+    
