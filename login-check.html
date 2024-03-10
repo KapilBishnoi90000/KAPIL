@@ -1,49 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Done</title>
-  <link rel="shortcut icon" type="x-icon" href="https://us.123rf.com/450wm/artbandung99/artbandung992202/artbandung99220200043/183290361-letter-v-and-k-logo-in-modern-style.jpg?ver=6">
-  
-  
-    <style>
-        /* You can add your own styles here */
-      
 
-        #redirect-container {
+    <title>Your Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #ffffff;
+        }
+
+        #centered-img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        #hidden-page {
             display: none;
         }
     </style>
 </head>
 <body>
+    <div id="centered-img">
+        <img style="width: 500px;" src="https://i.stack.imgur.com/7VozH.gif" alt="Centered Image">
+    </div>
 
-<!-- Container for the redirect message -->
-<div id="redirect-container">
-    <center>
-    <img src="https://2.bp.blogspot.com/-WdNReAvdDFM/VrocQdIoHbI/AAAAAAAAR1M/SEBM2vUBMog/s1600/SID_FB_001.gif" style="width: 400px;">
-    
-</div>
+    <div id="hidden-page">
+        <!-- Content of the new page goes here -->
+        
+    </div>
 
-<script>
-    // Function to show the redirect message and navigate after 1 second
-    function redirectToNextPage() {
-        var redirectContainer = document.getElementById('redirect-container');
-        redirectContainer.style.display = 'block';
-
-        setTimeout(function() {
-            // Change the URL to the desired next page
-            window.location.href = 'https://kapilbishnoi90000.github.io/KAPIL/login.html';
-
-        }, 6500);
-    }
-
-    // Call the redirectToNextPage function when the page loads
-    window.onload = function() {
-        redirectToNextPage();
-    };
-</script>
-</center>
+    <script>
+        // Redirect to the new page after 5 seconds
+        setTimeout(function () {
+            document.getElementById('hidden-page').style.display = 'block';
+            window.location.href = 'https://kapilbishnoi90000.github.io/KAPIL/login.html'; // Replace with the actual new page URL
+        }, 3000);
+    </script>
 </body>
 </html>
