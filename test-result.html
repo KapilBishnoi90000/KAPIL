@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttons with Dropdown</title>
+  <!-- Include Bootstrap CSS and JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 800px;
+    }
+
+    .button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 14px;
+      border: 1px solid #3498db;
+      border-radius: 5px;
+      background-color: #3498db;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #2980b9;
+    }
+
+    .button5 {background-color: #555555;} /* Black */
+
+  </style>
+</head>
+<body>
+
+<div class="button-container">
+
+  <!-- Button 1 -->
+  <button type="button" class="button" data-toggle="modal" data-target="#modal1">Scholarship</button>
+  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Scholarship Result</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Add dropdown-like options for Button 1 here -->
+          <a href="https://kapilbishnoi90000.github.io/KAPIL/Scholarship-test-1-Information.html">
+            <button class="button button5">Scholarship Test Topper</button>
+            </a>
+            <br>
+            <a href="https://kapilbishnoi90000.github.io/KAPIL/scholarship-test-1.html">
+<button class="button button5">Scholarship Test 1</button>
+          </a>
+          <br>
+          <a href="https://kapilbishnoi90000.github.io/KAPIL/scholarship-test-1.html">
+          <button class="button button5">Scholarship Test 2</button>
+          </a>
+          <br>
+          <a href="https://kapilbishnoi90000.github.io/KAPIL/scholarship-test-1.html">
+          <button class="button button5">Scholarship Test 3</button>
+</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add more buttons with similar structure -->
+  <!-- Duplicate the structure below for Buttons 2 to 20 -->
+
+  <!-- Button 2 -->
+  <button type="button" class="button" data-toggle="modal" data-target="#modal2">Class 10</button>
+  <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Class 10</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Add dropdown-like options for Button 2 here -->
+          <button class="button button5">Math</button>
+          <br>
+          <button class="button button5">Biology</button>
+          <br>
+          <button class="button button5">Chemistry</button>
+          <br>
+          <button class="button button5">Physics</button>
+          <br>
+          <button class="button button5">Social Science</button>
+          <br>
+          <button class="button button5">Hindi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Button 3 -->
+<button type="button" class="button" data-toggle="modal" data-target="#modal3">Button 3</button>
+<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Dropdown Options for Button 3</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Add dropdown-like options for Button 2 here -->
+        <p>Option 1</p>
+        <p>Option 2</p>
+        <p>Option 3</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button 2 -->
+<button type="button" class="button" data-toggle="modal" data-target="#modal2">Button 2</button>
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Dropdown Options for Button 2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Add dropdown-like options for Button 2 here -->
+        <p>Option 1</p>
+        <p>Option 2</p>
+        <p>Option 3</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button 2 -->
+<button type="button" class="button" data-toggle="modal" data-target="#modal2">Button 2</button>
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Dropdown Options for Button 2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Add dropdown-like options for Button 2 here -->
+        <p>Option 1</p>
+        <p>Option 2</p>
+        <p>Option 3</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button 2 -->
+<button type="button" class="button" data-toggle="modal" data-target="#modal2">Button 2</button>
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Dropdown Options for Button 2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Add dropdown-like options for Button 2 here -->
+        <p>Option 1</p>
+        <p>Option 2</p>
+        <p>Option 3</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button 2 -->
+<button type="button" class="button" data-toggle="modal" data-target="#modal2">Button 2</button>
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Dropdown Options for Button 2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Add dropdown-like options for Button 2 here -->
+        <p>Option 1</p>
+        <p>Option 2</p>
+        <p>Option 3</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button 2 -->
+<button type="button" class="button" data-toggle="modal" data-target="#modal2">Button 2</button>
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Dropdown Options for Button 2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Add dropdown-like options for Button 2 here -->
+        <p>Option 1</p>
+        <p>Option 2</p>
+        <p>Option 3</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button 2 -->
+<button type="button" class="button" data-toggle="modal" data-target="#modal2">Button 2</button>
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Dropdown Options for Button 2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Add dropdown-like options for Button 2 here -->
+        <p>Option 1</p>
+        <p>Option 2</p>
+        <p>Option 3</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button 2 -->
+<button type="button" class="button" data-toggle="modal" data-target="#modal2">Button 2</button>
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Dropdown Options for Button 2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Add dropdown-like options for Button 2 here -->
+        <p>Option 1</p>
+        <p>Option 2</p>
+        <p>Option 3</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button 2 -->
+<button type="button" class="button" data-toggle="modal" data-target="#modal2">Button 2</button>
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Dropdown Options for Button 2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Add dropdown-like options for Button 2 here -->
+        <p>Option 1</p>
+        <p>Option 2</p>
+        <p>Option 3</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button 2 -->
+<button type="button" class="button" data-toggle="modal" data-target="#modal2">Button 2</button>
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Dropdown Options for Button 2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Add dropdown-like options for Button 2 here -->
+        <p>Option 1</p>
+        <p>Option 2</p>
+        <p>Option 3</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+</body>
+</html>
